@@ -1,0 +1,8 @@
+.Box {
+    height: 100px;
+    aspect-ratio: 1/1;
+    background-color: red;
+    box-sizing: content-box;
+
+}
+

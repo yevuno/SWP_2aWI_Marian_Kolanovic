@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Box-Sizing</title>
+</head>
+<body>
+    <h1>Box-Sizing</h1>
+    <input value="0" class="paddingSelector" type="range" onchange="changePadding()"> 
+    <h2><span class="selectedNumber">0</span>px</h2>
+    <select name="selectedBox" id="selectedBox">
+        <option value="bBox">Border-box</option>
+        <option value="cBox">Content-box</option>
+      </select>
+    <div class="Box">
+        <p>Text</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
