@@ -10,9 +10,9 @@
     <h1>Box-Sizing</h1>
     <input value="0" class="paddingSelector" type="range" onchange="changePadding()"> 
     <h2><span class="selectedNumber">0</span>px</h2>
-    <select name="selectedBox" id="selectedBox">
-        <option value="bBox">Border-box</option>
-        <option value="cBox">Content-box</option>
+    <select name="selectedBox" id="selectedBox" onchange="changePadding()">
+        <option value="border-box">Border-box</option>
+        <option value="content-box">Content-box</option>
       </select>
     <div class="Box">
         <p>Text</p>
