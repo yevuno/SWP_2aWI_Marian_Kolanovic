@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Box-Sizing</title>
 </head>
 <body>
-    <h1>Box-Sizing</h1>
-    <input value="0" class="paddingSelector" type="range" onchange="changePadding()"> 
-    <h2><span class="selectedNumber">0</span>px</h2>
-    <select name="selectedBox" id="selectedBox" onchange="changePadding()">
+    <h1 class="universal-heading">Box-Sizing</h1>
+    <input value="0" class="universal-range" type="range" onchange="changePadding()"> 
+    <h2 class="universal-selectedNumber"><span>0</span>px</h2>
+    <select name="selectedBox" id="selectedBox" class="universal-select" onchange="changePadding()">
         <option value="border-box">Border-box</option>
         <option value="content-box">Content-box</option>
-      </select>
-    <div class="Box">
-        <p>Text</p>
+    </select>
+    <div class="universal-box">
+        <p class="universal-text">Text</p>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,9 +1,9 @@
-let paddingSelector  = document.querySelector(".paddingSelector");
-console.log(paddingSelector.value)
+let paddingSelector = document.querySelector(".universal-range");
+console.log(paddingSelector.value);
 
-let box = document.querySelector(".Box");
+let box = document.querySelector(".universal-box");
 
-let displayNumber = document.querySelector(".selectedNumber")
+let displayNumber = document.querySelector(".universal-selectedNumber");
 
 function changePadding() {
     box.style.padding = paddingSelector.value + "px";
