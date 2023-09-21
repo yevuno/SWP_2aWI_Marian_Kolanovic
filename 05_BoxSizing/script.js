@@ -7,6 +7,6 @@ let displayNumber = document.querySelector(".universal-selectedNumber");
 
 function changePadding() {
     box.style.padding = paddingSelector.value + "px";
-    displayNumber.innerHTML = paddingSelector.value;
+    displayNumber.innerHTML = paddingSelector.value + "px";
     box.style.boxSizing = document.querySelector("#selectedBox").value;
 }
