@@ -1,3 +1,3 @@
 # SWP_2aWI_Marian_Kolanovic
 
-test
+Hier sollte eine Beschreibung stehen
