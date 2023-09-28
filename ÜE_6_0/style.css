@@ -1,3 +1,6 @@
+* {
+    margin: 0;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -38,8 +41,6 @@ body {
 .universal-box {
     height: 300px;
     width: 400px;
-    margin: none;
-    padding: none;
     border: 1px solid #ccc;
     background-color: #007bff;
 }
@@ -50,10 +51,31 @@ body {
     color: #000000;
 }
 
+.bar {
+    padding: 30px 0 30px 0;
+    flex-direction: row-reverse;
+    display: flex;
+    background-color: orange;
+    width: 100vw;
+    margin-bottom: 20px;
+}
 
 
+.element {
+    margin: 30px;
+    border: solid 1px;
+    height: 30px;
+    width: 30px;
+}
+
+.cell {
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
 
 .container {
+    left: 20px;
     position: relative;
     background-color: #007bff;
     height: 300px;
