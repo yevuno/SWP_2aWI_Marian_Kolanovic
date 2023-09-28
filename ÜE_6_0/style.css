@@ -94,3 +94,11 @@ body {
     margin: none;
 }
 
+.box2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background-color: orangered;
+}
