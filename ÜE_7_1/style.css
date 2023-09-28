@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Universelle Überschrift */
+.universal-heading {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Universeller Bereich (Range Input) */
+.universal-range {
+    width: 70%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+/* Universelle ausgewählte Nummer */
+.universal-selectedNumber {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Universelle Auswahl (Select) */
+.universal-select {
+    width: 70%;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+/* Universelle Box */
+.universal-box {
+    height: 300px;
+    width: 400px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+}
+
+/* Universeller Text */
+.universal-text {
+    font-size: 18px;
+    color: #000000;
+}
+
+.bar {
+    position: absolute;
+    bottom: 10%;
+    padding: 30px 0 30px 0;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+    width: 100vw;
+}
+
+
+.element {
+    background-color: #007bff;
+    border: solid 1px;
+    height: 20px;
+    width: 60px;
+}
+
+.cell {
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.container {
+    top: 40px;
+    left: 40px;
+    position: relative;
+    background-color: #007bff;
+    height: 400px;
+    width: 200px;
+    padding: none;
+}
+
+.box {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    margin: none;
+}
+
+
+.box2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    width: 40px;
+    background-color: orange;
+}
