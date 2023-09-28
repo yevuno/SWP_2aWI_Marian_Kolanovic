@@ -52,20 +52,22 @@ body {
 }
 
 .bar {
+    position: absolute;
+    bottom: 30%;
     padding: 30px 0 30px 0;
     flex-direction: row-reverse;
     display: flex;
+    justify-content: space-around;
     background-color: orange;
     width: 100vw;
-    margin-bottom: 20px;
 }
 
 
 .element {
-    margin: 30px;
+    background-color: #007bff;
     border: solid 1px;
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
 }
 
 .cell {
@@ -75,6 +77,7 @@ body {
 }
 
 .container {
+    top: 20px;
     left: 20px;
     position: relative;
     background-color: #007bff;
@@ -97,8 +100,8 @@ body {
 .box2 {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     height: 50px;
     width: 50px;
-    background-color: orangered;
+    background-color: purple;
 }
