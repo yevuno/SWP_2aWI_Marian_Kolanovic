@@ -39,8 +39,7 @@ body {
     height: 300px;
     width: 400px;
     margin: none;
-    box-sizing: content-box;
-    padding: 20px;
+    padding: none;
     border: 1px solid #ccc;
     background-color: #007bff;
 }
@@ -51,8 +50,25 @@ body {
     color: #000000;
 }
 
+
+
+
 .container {
     position: relative;
-    left: 20px;
-    top: 20px;
+    background-color: #007bff;
+    height: 300px;
+    width: 400px;
+    padding: none;
 }
+
+.box {
+    background-color: orange;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: none;
+}
+
