@@ -53,7 +53,7 @@ body {
 
 .bar {
     position: absolute;
-    bottom: 30%;
+    bottom: 10%;
     padding: 30px 0 30px 0;
     flex-direction: row-reverse;
     display: flex;
@@ -66,7 +66,7 @@ body {
 .element {
     background-color: #007bff;
     border: solid 1px;
-    height: 60px;
+    height: 20px;
     width: 60px;
 }
 
@@ -77,31 +77,32 @@ body {
 }
 
 .container {
-    top: 20px;
-    left: 20px;
+    top: 40px;
+    left: 40px;
     position: relative;
     background-color: #007bff;
-    height: 300px;
-    width: 400px;
+    height: 400px;
+    width: 200px;
     padding: none;
 }
 
 .box {
-    background-color: orange;
+    background-color: rgb(0, 0, 0);
     padding: 20px;
     width: 100px;
     height: 100px;
     position: absolute;
-    right: 0px;
-    bottom: 0px;
+    left: -20px;
+    top: -20px;
     margin: none;
 }
+
 
 .box2 {
     position: absolute;
     right: 0;
-    top: 0;
-    height: 50px;
-    width: 50px;
-    background-color: purple;
+    bottom: 0;
+    height: 40px;
+    width: 40px;
+    background-color: orange;
 }
