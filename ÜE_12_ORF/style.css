@@ -2,11 +2,8 @@ body {
     display: grid;
     justify-items: center;
     background-color: rgb(225, 225, 225);
-    font-family: "ORF Universal",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif; 
-    font-feature-settings: "liga", "kern";
     margin: 0;
 }
-
 
 .view {
     width: 75vw;
@@ -45,3 +42,18 @@ body {
     z-index: 1;
     top: -3px;
 }
+
+.links {
+    display: flex;
+    flex-direction: row;
+    background-color: #dd1d24;
+    width: 100%;
+    height: min-content; 
+    justify-content: space-around;
+}
+
+.linkElement {
+    font-size: x-large;
+}
+
+
