@@ -30,30 +30,51 @@ body {
     padding: 10px 15px 10px 15px;
 }
 
+.element:hover {
+    text-decoration: underline;
+}
+
 .element:nth-last-child(1) {
     float: right;
 }
 
 .hero {
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr;
+    justify-items: center;
+    align-items: center;
     background-color: #dd1d24;
     width: 100%;
     height: 100px; 
     position: relative;
     z-index: 1;
     top: -3px;
+    
 }
+
+.heroElement {
+    float: left;
+}
+
+
 
 .links {
     display: flex;
     flex-direction: row;
-    background-color: #dd1d24;
+    position: relative;
+    z-index: 1;
+    top: -8px;
+    background-color: #91070c;
     width: 100%;
     height: min-content; 
     justify-content: space-around;
 }
 
+
+
 .linkElement {
-    font-size: x-large;
+    color: white;
+    font-size: 20px;
 }
 
 
