@@ -12,7 +12,12 @@ body {
     margin: 0;
 }
 
+header {
+    position: relative;
+}
+
 .view {
+    position: relative;
     width: 75vw;
     height: 100vh;
     border: solid 1px solid;
@@ -38,6 +43,7 @@ body {
 }
 
 .element:hover {
+    cursor: pointer;
     text-decoration: underline;
 }
 
@@ -46,9 +52,7 @@ body {
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: 0.1fr 0.1fr;
-    justify-items: center;
+    display: flex;
     align-items: center;
     background-color: #dd1d24;
     width: 100%;
@@ -60,16 +64,22 @@ body {
 }
 
 .heroElement {
-    float: left;
+    position: relative;
+    left: 30px;
+    font-size: 1.625rem;
+    font-weight: normal;
+    color: white;
 }
 
 
 
 .links {
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     flex-direction: row;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     top: -8px;
     background-color: #91070c;
     width: 100%;
@@ -82,6 +92,49 @@ body {
 .linkElement {
     color: white;
     font-size: 20px;
+}
+
+.imgContainer {
+    position: relative;
+    z-index: 1;
+    top: -10px;
+}
+.imgContainer > img {
+    width: 100%;
+}
+
+.titleContainer {
+    padding: 2%;
+    background-color: white;
+    position: relative;
+    z-index: 3;
+    height: 300px;
+    top: -100px;
+    width: 65%;
+    left: 50%;
+    translate: -50%;
+}
+
+.titleContent {
+    display: grid;
+    gap: 10px;
+}
+
+
+.titleContent > h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #84868c;
+}
+
+
+.titleContent > h1 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.titleContent > p {
+    font-weight: normal;
 }
 
 
