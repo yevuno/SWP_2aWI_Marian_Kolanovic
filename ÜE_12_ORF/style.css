@@ -1,4 +1,11 @@
+@font-face {
+    font-family: "ORF";
+    src: url(ORFUniversalSCVF_W_WghtOpsz.woff2);
+}
+
+
 body {
+    font-family: "ORF";
     display: grid;
     justify-items: center;
     background-color: rgb(225, 225, 225);
