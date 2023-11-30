@@ -1,0 +1,50 @@
+.hidden {
+    display: none;
+}
+
+.options {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    background-color: grey;
+    padding: 20px;
+    width: max-content;
+}
+
+.todoMain {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+    padding: 20px;
+    width: max-content;
+}
+
+.school {
+    background-color: aqua;
+}
+
+.work {
+    background-color: yellow;
+}
+
+.freetime {
+    background-color: green;
+}
+
+.other {
+    background-color: royalblue;
+}
+
+
+li {
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+}
+
+li:hover {
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}

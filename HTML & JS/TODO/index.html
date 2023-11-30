@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Todo Liste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Meine Todo Liste</h1>
+    <div class="options">
+        <button id="createTodo" onclick="showInput()">ToDo erstellen</button>
+        <div class="hidden" id="inputContainer">
+            <h2>Name</h2>
+                <input type="text" id="name">
+            <h2>Beschreibung</h2>
+                <input type="text" id="description">
+            <h2>Kategorie</h2>
+                <select name="category" id="category">
+                    <option value="school">Schule</option>
+                    <option value="work">Arbeit</option>
+                    <option value="freetime">Freizeit</option>
+                    <option value="other">Andere</option>
+                </select>
+                <br>
+            <button onclick="addTask()">Erstellen</button>
+        </div>
+    </div>
+    <div class="todoMain">
+        <ul id="taskList"></ul>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
