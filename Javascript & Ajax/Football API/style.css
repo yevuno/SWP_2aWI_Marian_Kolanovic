@@ -1,11 +1,128 @@
-body {
-    position: fixed;
-    background-image: url("Assets/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+* {
+    margin: 0;
+}
 
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+
+body {
+    background-image: url('../Football API/Assets/bg.jpg');
+    background-size: auto 120vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: 'Manrope', sans-serif;
+    overflow: hidden;
+}
+
+
+
+
+main {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center
+}
+
+@media (max-width: 1000px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    header {
+        align-self: self-end;
+        position: relative;
+        top: -20%;
+    }
+    section {
+        align-self: start;
+    }
+    .teamOne, .teamTwo {
+        scale: 0.75;
+    }
+
+}
+
+
+
+#titleHeader {
+    font-size: calc(2rem + 5vw);
+    color: white;
+}
+
+nav {
+    position: sticky;
+    padding: 20px;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+.navElement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: 2px;
+    border: 1px solid transparent;
+}
+
+.navElement:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.leagueName {
+    font-size: 20px;
+    color: white;
+}
+
+.HeroButton {
+    background-color: black;
+    font-size: 12px;
+    border-radius: 8px;
+    padding-top: 0.725rem;
+    padding-bottom: 0.725rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    border: none;
+    color: white;
+}
+
+.HeroButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.teamOne, .teamTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.vs {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
 }
