@@ -1,15 +1,11 @@
 fetch("https://api.openligadb.de/getmatchdata/bl1")
     .then((result) => {
         result.json().then((data) => {
-            // Sortiere die Spiele nach Datum
             data.sort((a, b) => new Date(a.matchDateTime) - new Date(b.matchDateTime));
             
-            // Finde das nächste bevorstehende Spiel
             const upcomingMatch = data.find(match => new Date(match.matchDateTime) > new Date());
 
-            // Überprüfe, ob ein bevorstehendes Spiel gefunden wurde
             if (upcomingMatch) {
-                // Gib die Informationen zum nächsten Spiel aus
                 console.log("Nächstes Spiel:");
                 console.log("Heimteam:", upcomingMatch.team1.teamName);
                 console.log("Auswärtsteam:", upcomingMatch.team2.teamName);
@@ -19,7 +15,7 @@ fetch("https://api.openligadb.de/getmatchdata/bl1")
 
                 document.getElementById("nextGame").innerHTML = "Nächstes Spiel: " + upcomingMatch.matchDateTime;
 
-                getTeamLogos(guestTeamText, homeTeamText); // Übergebe die Werte an die Funktion getTeamLogos
+                getTeamLogos(guestTeamText, homeTeamText); 
             } else {
                 console.log("Kein bevorstehendes Spiel gefunden.");
             }
