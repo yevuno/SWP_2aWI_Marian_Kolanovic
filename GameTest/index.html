@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="playSettings">
+        <h1>Guess The Color</h1>
+        <button id="easy" onclick="easyMode()">Easy Mode</button>
+        <button id="hard" onclick="hardMode()">Hard Mode</button>
+    </div>
     <script src="script.js"></script>
+    <main class="gameContainer easy">
+        <div class="header">
+            <h1>Guess the Color</h1>
+            <div id="gameColor"></div>
+        </div>
+        <div class="board">
+            <div class="game">
+                <input type="color">
+            </div>
+        </div>
+        <div class="info"></div>
+    </main>
+    <main class="gameContainer hard">
+        <div class="header">
+            <h1>Guess the Color</h1>
+            <h2 id="gameColor"></h2>
+        </div>
+        <div class="board">
+            <div class="game">
+           
+            </div>
+        </div>
+        <div class="info"></div>
+    </main>
 </body>
 </html>
