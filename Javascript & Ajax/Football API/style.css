@@ -9,7 +9,7 @@ body {
     font-family: "Roboto Mono", monospace;
     color: white;
     overflow: hidden;
-    background-color: rgb(0, 14, 20);
+    background-color: #000e14;
 }
 
 main {
@@ -53,7 +53,7 @@ main {
 
 
 #titleHeader {
-    font-size: calc(2rem + 5vw);
+    font-size: calc(2rem + 3vw);
     color: white;
 }
 
@@ -86,7 +86,7 @@ nav {
 }
 
 .HeroButton {
-    background-color: black;
+    background-color: #191e24;
     font-size: 12px;
     border-radius: 8px;
     padding-top: 0.725rem;
@@ -108,12 +108,22 @@ nav {
 }
 
 section {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: 0.2fr 1fr;
+    background-color: #191e24;
+    padding: 2em;
+    border-radius: 0.75em;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     align-items: center;
     justify-items: center;
+}
+
+.teamInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
 }
 
 section > h1 {
@@ -122,13 +132,16 @@ section > h1 {
 }
 
 .teamOne, .teamTwo {
+    background-color: #34383c;
+    width: 250px;
+    height: 120px;
+    border-radius: 0.75em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
 }
 
 .vs {

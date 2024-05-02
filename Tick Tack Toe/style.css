@@ -1,0 +1,22 @@
+.board {
+    width: 600px;
+    height: 600px;
+    border: solid 1px black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.board :nth-child(odd) {
+    background-color: grey;
+}
+
+.space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    font-size: 100px;
+}
+

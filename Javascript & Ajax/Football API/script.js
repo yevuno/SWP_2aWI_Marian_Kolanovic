@@ -23,7 +23,7 @@ fetch("https://api.openligadb.de/getmatchdata/bl1")
                 
                 var formattedDateTime = day + '.' + month + '.' + year + ' um ' + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
                 
-                document.getElementById("nextGame").innerHTML = formattedDateTime;
+                document.getElementById("nextGame").innerHTML = "Nächstes Spiel: " + formattedDateTime;
 
                 getTeamLogos(guestTeamText, homeTeamText); 
             } else {
@@ -73,5 +73,6 @@ fetch("https://api.openligadb.de/getmatchdata/bl1")
     'SC Paderborn 07': 'https://www.bundesliga.com/assets/clublogo/DFL-CLU-00000P.svg',
     'SV Werder Bremen': 'https://www.bundesliga.com/assets/clublogo/DFL-CLU-00000W.svg',
     'TSG 1899 Hoffenheim': 'https://www.bundesliga.com/assets/clublogo/DFL-CLU-00000H.svg',
-    'VfL Wolfsburg': 'https://www.bundesliga.com/assets/clublogo/DFL-CLU-00000W.svg'
+    'VfL Wolfsburg': 'https://www.bundesliga.com/assets/clublogo/DFL-CLU-00000W.svg',
+    'VfB Stuttgart': 'https://www.bundesliga.com/assets/clublogo/DFL-CLU-00000D.svg',
     };
